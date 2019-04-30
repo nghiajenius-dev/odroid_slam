@@ -46,6 +46,55 @@ Find linux kernel version: https://www.cyberciti.biz/faq/find-print-linux-unix-k
 >> hostnamectl  
 >> lsb_release -a  
 
+#######################
+## Git
+stage file: git add .
+unstage file: git reset HEAD
+generate patch file (apply diff for unstaged file): git diff > output_file.patch
+reset hard: git reset --hard HEAD
+
+## Manual kernel 4.9 patch
+camera-formats
+	/drivers/media/usb/uvc/Makefile
+	/drivers/media/usb/uvc/uvc_driver.c
+	/drivers/media/usb/uvc/uvcvideo.h
+	/drivers/media/v4l2-core/v4l2-ioctl.c
+	/include/uapi/linux/videodev2.h
+
+hid
+    /drivers/iio/accel/hid-sensor-accel-3d.c
+    /drivers/iio/gyro/hid-sensor-gyro-3d.c
+    /include/linux/hid-sensor-ids.h
+
+metadata
+    /drivers/media/usb/uvc/uvc_driver.c
+    /drivers/media/usb/uvc/uvc_video.c
+    /drivers/media/usb/uvc/uvcvideo.h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
